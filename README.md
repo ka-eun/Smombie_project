@@ -1,11 +1,18 @@
 # Smombie_project
 
-> 프로젝트 진행 계획   
->> 스마트폰 사용자의 모습을 빅데이터화여 학습시키기- 앞으로의 방향성
-  학습을 시키기 위해서는 “특징”을 알고 있어야 한다.
-  -> 스마트폰을 들고 있다면 팔이 특정한 모양을 띌 것이라고 생각하여 손을 
-      인식하기로 함
-
+> 프로젝트 개요
+>> 스마트폰을 사용하는 보행자를 인식하여 알림 또는 주의를 주는 시스템   
+>> 자세인식 알고리즘을 통해 해당 자세를 하고 있는 사람을 인식하는 서비스 구축   
+   
+> 개발 목표   
+>> smombie를 자동으로 detect하는 소프트웨어 알고리즘 개발   
+>> smombie detection의 정확도 80%이상 달성하기   
+   
+> 개발 방법   
+>> 스마트폰 사용자의 사진, 동영상을 빅데이터화여 학습시키기   
+>> 스마트폰 사용자의 자세 분석을 통해 특징 찾기   
+>> openCV, xml, tensorflow 사용 예정   
+   
 # 20180716 : 동작 인식 개발 tool   
 > Tensorflow      
 >> 데이터 흐름 프로그래밍(ex. neural network)을 위한 오픈소스 소프트웨어       
@@ -82,3 +89,11 @@
  >>> 정확도 약 0에 수렴   
  >>> 가방, 다리 등 두개의 수직선이 있는 영역 모두 인식   
  >>> 기존의 haar fullbody xml의 정확도가 낮아 인식이 어렵다   
+    
+  # 20180816 : Image classification using tensorflow   
+  > Dog-Cat classification   
+  >> tensorflow를 이용한 training을 거쳐 최종적으로 dog/ cat 두 class로 분류시키는 모델 실습   
+     
+  # 20180817 : Smombie classifier model    
+  > 흠냐뤼   
+  

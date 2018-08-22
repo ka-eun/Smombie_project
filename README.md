@@ -56,62 +56,62 @@
    
  # 20180726 - 20180806 : Smombie 데이터 수집   
 - 사진 데이터 수집   
- > 신호등, 길거리 등에서 스마트폰을 이용하는 사람들의 사진 데이터 수집 (약 2000장)        
+> 신호등, 길거리 등에서 스마트폰을 이용하는 사람들의 사진 데이터 수집 (약 2000장)        
        
  # 20180807 : Smombie 데이터 수집 및 분류  
 - 사진 데이터 수집   
- > 신호등, 길거리 등에서 스마트폰을 이용하는 사람들의 동영상 데이터 수집 
+> 신호등, 길거리 등에서 스마트폰을 이용하는 사람들의 동영상 데이터 수집 
     
 - 데이터 분석 및 분류   
- > 효과적인 데이터 학습을 위해 앞모습, 뒷모습 분류  
+> 효과적인 데이터 학습을 위해 앞모습, 뒷모습 분류  
     
  # 20180808 - 20180809 : Smombie 데이터 편집   
 - 데이터 편집   
- > 스마트폰 사용자의 자세 사진을 사용하기 위해 사진 편집 (약 3000장)   
+> 스마트폰 사용자의 자세 사진을 사용하기 위해 사진 편집 (약 3000장)   
     
  # 20180813 : Smombie 데이터 분류   
 - 데이터 분류 : 스마트폰을 사용하는 팔(왼쪽/오른쪽), 각도(정면/45도/90도)에 따라 분류   
- > 1_0(왼팔 정면) : 130장   
- > 1_45(왼팔 45도) : 586장   
- > 1_90(왼팔 90도) : 198장   
- > 2_0(양팔 정면) : 457장   
- > 3_0(오른팔 정면) : 225장   
- > 3_45(오른팔 45도) : 401장   
- > 3_90(오른팔 90도) : 305장
- > 애매(분류 불가) : 88장   
- > 뒷모습 : 219장      
+> 1_0(왼팔 정면) : 130장   
+> 1_45(왼팔 45도) : 586장   
+> 1_90(왼팔 90도) : 198장   
+> 2_0(양팔 정면) : 457장   
+> 3_0(오른팔 정면) : 225장   
+> 3_45(오른팔 45도) : 401장   
+> 3_90(오른팔 90도) : 305장
+> 애매(분류 불가) : 88장   
+> 뒷모습 : 219장      
     
- # 20180814 : Smombie detector XML    
+# 20180814 : Smombie detector XML    
 - smombie detector XML 만들기   
- > Haar Cascade를 이용한 Object dection xml 사용   
- > 분류된 데이터에 따라 총 7개의 smombie detector xml 제작   
+> Haar Cascade를 이용한 Object dection xml 사용   
+> 분류된 데이터에 따라 총 7개의 smombie detector xml 제작   
     
 - XML 파일 적용하기   
- > + 검출된 영역에서 피부색의 범위가 아닌 부분 제거   
- >> hsv를 이용하여 피부색 영역 추출하기 어려움   
+> + 검출된 영역에서 피부색의 범위가 아닌 부분 제거   
+>> hsv를 이용하여 피부색 영역 추출하기 어려움   
     
- > + haar fullbody detector xml를 적용한 범위 안에서 smombie detecor 적용   
- >> 정확도 약 0에 수렴   
- >> 가방, 다리 등 두개의 수직선이 있는 영역 모두 인식   
- >> 기존의 haar fullbody xml의 정확도가 낮아 인식이 어렵다   
+> + haar fullbody detector xml를 적용한 범위 안에서 smombie detecor 적용   
+>> 정확도 약 0에 수렴   
+>> 가방, 다리 등 두개의 수직선이 있는 영역 모두 인식   
+>> 기존의 haar fullbody xml의 정확도가 낮아 인식이 어렵다   
     
-  # 20180816 : Image classification using tensorflow   
+ # 20180816 : Image classification using tensorflow   
 - Dog-Cat classification   
-  > tensorflow를 이용한 training을 거쳐 최종적으로 dog/cat 두 class로 분류시키는 모델 실습   
+ > tensorflow를 이용한 training을 거쳐 최종적으로 dog/cat 두 class로 분류시키는 모델 실습   
      
-  # 20180817 - 20180822 : Smombie classifier model   
+ # 20180817 - 20180822 : Smombie classifier model   
 - model 분석
      
-  > + atcivation method에 따라   
-  >> 마지막 layer를 제외한 layer : relu, leaky relu, elu   
-  >> 마지막 lyaer : binary_crossentropy (classify를 위해 사용하는 함수)   
+> + atcivation method에 따라   
+>> 마지막 layer를 제외한 layer : relu, leaky relu, elu   
+>> 마지막 lyaer : binary_crossentropy (classify를 위해 사용하는 함수)   
      
-  > + dense에 따라   
-  >> 500   
-  >> 1500   
-  >> 2000   
+> + dense에 따라   
+>> 500   
+>> 1500   
+>> 2000   
      
-  > + epoch에 따라   
-  >> 100      
-  >> 200   
+> + epoch에 따라   
+>> 100      
+>> 200   
   

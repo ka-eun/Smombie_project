@@ -1,0 +1,22 @@
+ dense2000_epoch200_3  - 10s - loss: 0.0154 - acc: 0.9965 - val_loss: 0.0567 - val_acc: 0.9772
+
+test_1 O 99.23
+test_2 O 100
+test_3 O 59.17
+test_4 X 96.39
+test_5 X 100
+test_6 X 99.96
+test_7 X 78.56
+test_8 O 100
+test_9 X 99.49
+test_10 X 99.82
+test_11 X 98.97
+test_12 X 85.44
+test_13 X 96.90
+test_14 O 99.99
+test_15 O 60.41
+test_16 O 100
+test_17 O 99.48
+test_18 X 99.99
+test_19 O 100
+test_20 X 86.63

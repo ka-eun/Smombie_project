@@ -1,4 +1,4 @@
-#Haar Training- xml만들기   
+# Haar Training- xml만들기   
       
 - 개발 목표 : haar training을 이용해 사람이 핸드폰을 하는 모습을 감지하는 xml 파일을 만든다. 이 xml을 영상에서 돌려서 핸드폰을 하는 사람을 네모 모양으로 표시하도록 한다.    
    

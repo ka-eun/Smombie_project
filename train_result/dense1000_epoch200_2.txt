@@ -1,0 +1,22 @@
+dense1000 epoch 200_2 :  - 10s - loss: 0.0256 - acc: 0.9912 - val_loss: 0.0391 - val_acc: 0.9824
+
+test_1 O 94.66
+test_2 O 99.97
+test_3 O 99.94
+test_4 X 99.99
+test_5 X 99.99
+test_6 X 99.97
+test_7 X 81.71
+test_8 O 100
+test_9 O 99.66
+test_10 O 99.44
+test_11 X 82.63
+test_12 O 74.93
+test_13 X 100
+test_14 O 100
+test_15 O 100
+test_16 O 100
+test_17 O 94.84
+test_18 X 99.69
+test_19 O 98.46
+test_20 X 92.73

@@ -1,0 +1,22 @@
+dense1000 epoch 200
+
+test_1 O 100
+test_2 O 100
+test_3 O 100
+test_4 X 100
+test_5 X 100
+test_6 X 99.99
+test_7 O 98.86
+test_8 O 100
+test_9 O 98.88
+test_10 O 99.95
+test_11 O 83.83
+test_12 O 99.9
+test_13 X 97.4
+test_14 O 100
+test_15 O 100
+test_16 O 100
+test_17 O 100
+test_18 X 100
+test_19 X 72.3
+test_20 X 99.86

@@ -1,14 +1,14 @@
 # Smombie_project
 
-> - 프로젝트 개요
+- 프로젝트 개요
 >> 스마트폰을 사용하는 보행자를 인식하여 알림 또는 주의를 주는 시스템   
 >> 자세인식 알고리즘을 통해 해당 자세를 하고 있는 사람을 인식하는 서비스 구축   
    
-> - 개발 목표   
+- 개발 목표   
 >> smombie를 자동으로 detect하는 소프트웨어 알고리즘 개발   
 >> smombie detection의 정확도 80%이상 달성하기   
    
-> - 개발 방법   
+- 개발 방법   
 >> 스마트폰 사용자의 사진, 동영상을 빅데이터화여 학습시키기   
 >> 스마트폰 사용자의 자세 분석을 통해 특징 찾기   
 >> openCV, xml, tensorflow 사용 예정   
@@ -87,10 +87,10 @@
  >> 분류된 데이터에 따라 총 7개의 smombie detector xml 제작   
     
  > - XML 파일 적용하기   
- >> 검출된 영역에서 피부색의 범위가 아닌 부분 제거   
+ >> + 검출된 영역에서 피부색의 범위가 아닌 부분 제거   
  >>> hsv를 이용하여 피부색 영역 추출하기 어려움   
     
- >> haar fullbody detector xml를 적용한 범위 안에서 smombie detecor 적용   
+ >> + haar fullbody detector xml를 적용한 범위 안에서 smombie detecor 적용   
  >>> 정확도 약 0에 수렴   
  >>> 가방, 다리 등 두개의 수직선이 있는 영역 모두 인식   
  >>> 기존의 haar fullbody xml의 정확도가 낮아 인식이 어렵다   

@@ -1,0 +1,22 @@
+ dense500_epoch50_1  - 9s - loss: 0.0115 - acc: 0.9965 - val_loss: 0.1111 - val_acc: 0.9719
+
+test_1 O 96.11
+test_2 O 100
+test_3 O 94.88
+test_4 X 92.70
+test_5 X 62.57
+test_6 X 99.83
+test_7 O 54.03
+test_8 O 99.98
+test_9 O 87.67
+test_10 X 79.02
+test_11 O 99.24
+test_12 X 99.56
+test_13 X 99.39
+test_14 O 99.85
+test_15 O 99.2
+test_16 O 100
+test_17 X 90.26
+test_18 O 72.39
+test_19 O 69.03
+test_20 O 87.10

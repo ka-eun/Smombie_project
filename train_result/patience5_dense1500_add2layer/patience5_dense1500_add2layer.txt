@@ -1,0 +1,25 @@
+early_stopping = EarlyStopping(monitor='val_acc', min_delta=0, patience=5, verbose=0, mode='auto')
+dense 1500 epoch 200 layer +2
+
+12개 -> 특징: not smombie 무새임
+
+1. X 96.70
+2. X 89.69
+3. X 98.91
+4. O 89.92
+5. O 86.79
+6. O 96.48
+7. X 98.17
+8. O 98.21
+9. X 99.29
+10. X 95.29
+11. O 97.23
+12. X 94.39
+13. O 94.81
+14. O 84.92
+15. O 71.17
+16. O 98.45
+17. X 53.73
+18. O 95.62
+19. O 98.63
+20. O 98.95

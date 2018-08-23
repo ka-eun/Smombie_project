@@ -99,7 +99,7 @@
 - Dog-Cat classification   
  > tensorflow를 이용한 training을 거쳐 최종적으로 dog/cat 두 class로 분류시키는 모델 실습   
      
- # 20180817 - 20180822 : Smombie classifier model   
+ # 20180817 - 20180823 : Smombie classifier model   
 - model 분석
      
 > + atcivation method에 따라   
@@ -114,4 +114,12 @@
 > + epoch에 따라   
 >> 100      
 >> 200   
+
+> + 2층의 layer를 추가한 후 early stopping callback 기능을 이용하였다    
+>> val_acc에 early stopping을 적용하여 일정 횟수이상 증가하지 않으면 학습을 중단하도록 하였다     
+>> early stopping with patience=5, dense 4200    
+>> early stopping with patience=5, dense 1500      
+>> early stopping with patience=5, dense 500      
+>> early stopping with patience=10, dense 4000      
+>> early stopping with patience=10, dense 4900        
   

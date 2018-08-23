@@ -1,0 +1,25 @@
+dense500 addedLayer
+
+test01 X 81.09
+test02 O 72.61
+test03 X 65.27
+test04 O 59.78
+test05 O 68.47
+test06 O 69.98
+test07 X 80.63
+test08 O 98.07
+test09 X 73.42
+test10 X 72.65
+test11 X 51.04
+test12 X 86.32
+test13 X 58.48
+test14 O 82.54
+test15 O 94.02
+test16 O 90.00
+test17 O 63.40
+test18 X 64.49
+test19 O 60.29
+test20 O 61.23
+
+
+

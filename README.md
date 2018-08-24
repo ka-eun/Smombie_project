@@ -122,7 +122,7 @@
 >> early stopping with patience=10, dense 4000      
 >> early stopping with patience=10, dense 4900        
 
-> 기존의 LeNet을 변경한 새로운 CNN을 이용하여 학습      
+> + 기존의 LeNet을 변경한 새로운 CNN을 이용하여 학습      
 >> dense=4800, early stopping(patience=10) 고정     
 >> 1. (conv conv pool) * 2 (conv pool) * 2 (dense) * 2      
 >> 2. (conv pool) * 2 (conv conv pool) * 2 (dense) * 2      

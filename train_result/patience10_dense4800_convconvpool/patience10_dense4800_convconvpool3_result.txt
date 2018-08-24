@@ -1,0 +1,31 @@
+early_stopping = EarlyStopping(monitor='val_acc', min_delta=0, patience=10, verbose=1, mode='auto')
+dense 4800
+
+(conv conv pool) * 4 (dense) * 2 model
+
+Epoch 38/200
+ - 200s - loss: 0.4150 - acc: 0.8098 - val_loss: 0.3678 - val_acc: 0.8429
+Epoch 00038: early stopping
+
+
+trial 2)
+1. O 61.74
+2. O 63.27
+3. O 79.66
+4. X 85.83
+5. X 76.93
+6. X 79.11
+7. O 52.27
+8. O 89.68
+9. O 54.79
+10. O 68.86
+11. X 85.92
+12. O 66.97
+13. X 84.27
+14. O 95.12
+15. O 85.09
+16. O 90.58
+17. O 95.12
+18. X 94.18
+19. X 84.08
+20. X 84.67

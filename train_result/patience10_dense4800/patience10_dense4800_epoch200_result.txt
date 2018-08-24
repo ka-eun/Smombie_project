@@ -1,0 +1,27 @@
+early_stopping = EarlyStopping(monitor='val_acc', min_delta=0, patience=10, verbose=1, mode='auto')
+dense 4800 epoch 200
+Epoch 49/200
+ - 111s - loss: 0.2779 - acc: 0.8870 - val_loss: 0.3109 - val_acc: 0.8686
+Epoch 00049: early stopping
+
+
+1. O 82.44
+2. O 88,62
+3. O 57.30
+4. O 56.33
+5. O 73.10
+6. O 88.93
+7. O 81.14
+8. O 99.63
+9. X 66.65
+10. O 63.37
+11. O 73.43
+12. X 91.36
+13. O 64.21
+14. O 97.79
+15. O 91.85
+16. O 99.71
+17. O 80.49
+18. X 57.78
+19. O 59.02
+20. O 86.72

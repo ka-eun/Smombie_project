@@ -63,8 +63,7 @@
 > 신호등, 길거리 등에서 스마트폰을 이용하는 사람들의 동영상 데이터 수집 
     
 - 데이터 분석 및 분류   
-> 효과적인 데이터 학습을 위해 앞모습, 뒷모습 분류  
-    
+> 효과적인 데이터 학습을 위해 앞모습, 뒷모습 분류       
  # 20180808 - 20180809 : Smombie 데이터 편집   
 - 데이터 편집   
 > 스마트폰 사용자의 자세 사진을 사용하기 위해 사진 편집 (약 3000장)   
@@ -99,7 +98,7 @@
 - Dog-Cat classification   
  > tensorflow를 이용한 training을 거쳐 최종적으로 dog/cat 두 class로 분류시키는 모델 실습   
      
- # 20180817 - 20180823 : Smombie classifier model   
+ # 20180817 - 20180824 : Smombie classifier model   
 - model 분석
      
 > + atcivation method에 따라   
@@ -122,4 +121,12 @@
 >> early stopping with patience=5, dense 500      
 >> early stopping with patience=10, dense 4000      
 >> early stopping with patience=10, dense 4900        
+
+> 기존의 LeNet을 변경한 새로운 CNN을 이용하여 학습      
+>> dense=4800, early stopping(patience=10) 고정     
+>> 1. (conv conv pool) * 2 (conv pool) * 2 (dense) * 2      
+>> 2. (conv pool) * 2 (conv conv pool) * 2 (dense) * 2      
+>> 3. (conv conv pool) * 3 (dense) * 2      
+>> 4. (conv conv pool) * 4 (dense) * 2       
+
   

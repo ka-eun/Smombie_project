@@ -5,7 +5,7 @@ import time
 
 options = {
     'model': 'cfg/yolo.cfg',
-    'load': 'bin/yolo.weights',
+    'load': 'bin/yolov2.weights',
     'threshold': 0.2,
     'gpu': 1.0
 }
@@ -15,7 +15,7 @@ colors = [tuple(255 * np.random.rand(3)) for _ in range(10)]
 
 capture = cv2.VideoCapture(0)
 capture.set(cv2.CAP_PROP_FRAME_WIDTH, 1920)
-capture.sest(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
+capture.set(cv2.CAP_PROP_FRAME_HEIGHT, 1080)
 
 while True:
     stime = time.time()

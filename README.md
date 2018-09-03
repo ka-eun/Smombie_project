@@ -130,5 +130,11 @@
 >> 2. (conv pool) * 2 (conv conv pool) * 2 (dense) * 2      
 >> 3. (conv conv pool) * 3 (dense) * 2      
 >> 4. (conv conv pool) * 4 (dense) * 2       
-
   
+ # 20180827 : YOLO 설치 및 예제 실습   
+ - YOLO 설치   
+ > Image Detection with YOLO-v2 (https://www.youtube.com/watch?v=PyjBd7IDYZs)   
+   
+ # 20180828 : Custom Object Detection with YOLO   
+ ![yolo_test1](https://user-images.githubusercontent.com/41510487/44968622-e279a680-af83-11e8-9c6f-07183d512ae9.jpg)   
+ ![yolo_test2](https://user-images.githubusercontent.com/41510487/44968641-f91ffd80-af83-11e8-9204-4dd0d31c4138.jpg)  

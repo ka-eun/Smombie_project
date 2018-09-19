@@ -138,4 +138,20 @@
  # 20180828 : Custom Object Detection with YOLO   
  - step 500 까지 학습을 진행한 결과   
  ![yolo_test1](https://user-images.githubusercontent.com/41510487/44968622-e279a680-af83-11e8-9c6f-07183d512ae9.jpg)   
- ![yolo_test2](https://user-images.githubusercontent.com/41510487/44968641-f91ffd80-af83-11e8-9204-4dd0d31c4138.jpg)  
+ ![yolo_test2](https://user-images.githubusercontent.com/41510487/44968641-f91ffd80-af83-11e8-9204-4dd0d31c4138.jpg)     
+    
+ # 20180917 : YOLO 개발환경 점검   
+ - 설치파일 목록   
+ > python36   
+ > cython   
+ > opencv   
+ > tensorflow-gpu   
+ > keras   
+ > numpy   
+ > CUDA9.0   
+ > cuDNN v7.2.1   
+ > pycharm (Anaconda)   
+ > YOLO weight, cfg   
+ > darknet   
+ > darkflow   
+ 

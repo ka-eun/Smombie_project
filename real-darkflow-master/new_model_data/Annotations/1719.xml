@@ -1,0 +1,34 @@
+<annotaion>
+  <folder>new_images</folder>
+  <filename>1719.png</filename>
+  <segmented>0</segmented>
+  <size>
+    <width>514</width>
+    <height>847</height>
+    <depth>3</depth>
+  </size>
+  <object>
+    <name>smombie</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>84</xmin>
+      <ymin>108</ymin>
+      <xmax>448</xmax>
+      <ymax>612</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>smombie</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>128</xmin>
+      <ymin>169</ymin>
+      <xmax>448</xmax>
+      <ymax>612</ymax>
+    </bndbox>
+  </object>
+</annotaion>

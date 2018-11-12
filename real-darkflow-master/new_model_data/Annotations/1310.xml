@@ -1,0 +1,34 @@
+<annotaion>
+  <folder>new_images</folder>
+  <filename>1310.png</filename>
+  <segmented>0</segmented>
+  <size>
+    <width>148</width>
+    <height>191</height>
+    <depth>3</depth>
+  </size>
+  <object>
+    <name>smombie</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>20</xmin>
+      <ymin>4</ymin>
+      <xmax>128</xmax>
+      <ymax>134</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>smombie</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>8</xmin>
+      <ymin>10</ymin>
+      <xmax>132</xmax>
+      <ymax>160</ymax>
+    </bndbox>
+  </object>
+</annotaion>

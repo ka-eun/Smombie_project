@@ -1,0 +1,22 @@
+<annotaion>
+  <folder>new_images</folder>
+  <filename>1258.png</filename>
+  <segmented>0</segmented>
+  <size>
+    <width>137</width>
+    <height>211</height>
+    <depth>3</depth>
+  </size>
+  <object>
+    <name>smombie</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>24</xmin>
+      <ymin>3</ymin>
+      <xmax>131</xmax>
+      <ymax>162</ymax>
+    </bndbox>
+  </object>
+</annotaion>

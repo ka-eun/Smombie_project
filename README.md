@@ -155,3 +155,30 @@
  > darknet   
  > darkflow   
  
+ # 20181001 : YOLO 학습 
+ - CUDA 설치 시 visual studio integration 실패
+ 
+ # 20181003 : YOLO 학습
+ - 성능 좋은 GPU를 사용하기 위해 퍼플 피시방에서 YOLO 설치 시도 - C드라이브 용량 부족으로 실패
+ 
+ # 20181105 : YOLO 학습
+ - 아산공학관 125-2호에서 CUDA 설치 실패
+ - 아산공학관 223호에서 GPU(NVIDIA GeForce GT 625)있는 컴퓨터 한 대, GPU 없는 컴퓨터 두 대 이용해 YOLO 학습 진행
+ 
+ # 20181107 : webcam 테스트
+ - 1812개의 dataset을 이용해 step 7000 까지 학습을 진행한 결과
+ - (사진)
+ 
+ # 20181112 : dataset 추가
+ - 새로 촬영한 사진과 사진들의 flip본을 이용하여 dataset을 6151개로 늘림
+ 
+ # 20181114 : YOLO 학습
+ - 6151개의 dataset을 이용해 YOLO 학습 진행
+ 
+ # 20181118 : webcam 테스트
+ - 6151개의 dataset을 이용해 step 72000 까지 학습을 진행한 결과
+ - (사진)
+ 
+ # 20181120 : dataset 추가
+ - 3952개의 dataset을 추가함\
+ 

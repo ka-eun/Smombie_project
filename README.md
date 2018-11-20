@@ -167,7 +167,8 @@
  
  # 20181107 : webcam 테스트
  - 1812개의 dataset을 이용해 step 7000 까지 학습을 진행한 결과
- - (사진)
+ ![1107](https://user-images.githubusercontent.com/40594522/48776286-d398c980-ed12-11e8-9625-f1a5c4a1af98.jpg)
+
  
  # 20181112 : dataset 추가
  - 새로 촬영한 사진과 사진들의 flip본을 이용하여 dataset을 6151개로 늘림
@@ -177,7 +178,8 @@
  
  # 20181118 : webcam 테스트
  - 6151개의 dataset을 이용해 step 42000 까지 학습을 진행한 결과
- - (사진)
+ ![1117_1](https://user-images.githubusercontent.com/40594522/48776300-dabfd780-ed12-11e8-8199-0a6b73a7813f.jpg)
+ ![1117_2](https://user-images.githubusercontent.com/40594522/48776305-ddbac800-ed12-11e8-8866-9bdb35aa0d22.jpg)
  
  # 20181120 : dataset 추가
  - 3952개의 dataset을 추가함

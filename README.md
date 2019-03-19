@@ -188,6 +188,10 @@
  # 20190201 : YOLO 재test   
  - webcam 두개 종류에 따라 하나는 아무 반응 없음(object detect 전혀 하지 않음), 하나는 모든 물체 및 사람을 잡음 (정확도 0에 수렴)   
     
+ # 20190222 : 교수님 면담   
+ - 깨끗한 image data set만을 사용해서 돌려보기(이미지 전처리)   
+ - 얼굴, 팔 등으로 class를 더 세분화해서 돌려보기   
+    
  # 20190305 - 20190308 : Image Preprocessing, CNN, YOLO 공부   
     
  # 20190312-20190319 : Image AI cumstom   

@@ -183,4 +183,17 @@
  
  # 20181120 : dataset 추가
  - 3952개의 dataset을 추가함
- 
+ - 총 10101개 dataset으로 train   
+    
+ # 20190201 : YOLO 재test   
+ - webcam 두개 종류에 따라 하나는 아무 반응 없음(object detect 전혀 하지 않음), 하나는 모든 물체 및 사람을 잡음 (정확도 0에 수렴)   
+    
+ # 20190305 - 20190308 : Image Preprocessing, CNN, YOLO 공부   
+    
+ # 20190312-20190319 : Image AI cumstom   
+ - 기존의 farmer class와 smombie class로 train   
+ > 사용 모델 : ResNet50   
+ > data set 크기 : 224x224pixel, train(약 900장) test(약 200장) 총 약1,100장   
+ > epoch : 100     
+ > test 결과 별로 정확도 높지 않음..farmer가 아닌 다른 포즈의 보행자 class를 만들어보기로 함   
+    

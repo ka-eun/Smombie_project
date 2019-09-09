@@ -1,0 +1,101 @@
+import os
+from xml.etree.ElementTree import Element, dump, parse
+import numpy as np
+import random
+import cv2
+
+from PIL import Image
+#import matplotlib as plt
+
+from matplotlib import pyplot as plt
+
+
+if __name__ == '__main__':
+
+    path = "annotation_original\\"
+
+    for i, fname in enumerate(os.listdir(path)):
+        fullpath = path + fname
+
+        tree = parse(fullpath)
+        #root = tree.getroot()
+
+        #f = open(path + fname[:-4] + ".txt",'w', encoding='utf8')
+
+        #size = root.get('size')
+        #width = size.get('width')
+        #height = size.get('height')
+
+        size = tree.find('size')
+        width = size.find('width')
+        height = size.find('height')
+
+        width.text = str(672)
+        height.text = str(672)
+
+        for object in tree.findall('object'):
+            bnd = object.find('bndbox')
+
+            xmin = bnd.find('xmin')
+            xmax = bnd.find('xmax')
+            ymin = bnd.find('ymin')
+            ymax = bnd.find('ymax')
+
+            if fname[0] == "1":
+                continue
+
+            elif fname[0] == "2":
+                xmin.text = str(int(xmin.text)+224)
+                xmax.text = str(int(xmax.text)+224)
+
+            elif fname[0] == "3":
+                xmin.text = str(int(xmin.text)+448)
+                xmax.text = str(int(xmax.text)+448)
+
+            elif fname[0] == "4":
+                ymin.text = str(int(ymin.text)+224)
+                ymax.text = str(int(ymax.text)+224)
+
+            elif fname[0] == "5":
+                ymin.text = str(int(ymin.text)+224)
+                ymax.text = str(int(ymax.text)+224)
+
+                xmin.text = str(int(xmin.text)+224)
+                xmax.text = str(int(xmax.text)+224)
+
+
+            elif fname[0] == "6":
+                ymin.text = str(int(ymin.text) + 224)
+                ymax.text = str(int(ymax.text) + 224)
+
+                xmin.text = str(int(xmin.text) + 448)
+                xmax.text = str(int(xmax.text) + 448)
+
+            elif fname[0] == "7":
+                ymin.text = str(int(ymin.text) + 448)
+                ymax.text = str(int(ymax.text) + 448)
+
+            elif fname[0] == "8":
+                ymin.text = str(int(ymin.text) + 448)
+                ymax.text = str(int(ymax.text) + 448)
+
+                xmin.text = str(int(xmin.text) + 224)
+                xmax.text = str(int(xmax.text) + 224)
+
+            elif fname[0] == "9":
+                ymin.text = str(int(ymin.text) + 448)
+                ymax.text = str(int(ymax.text) + 448)
+
+                xmin.text = str(int(xmin.text) + 448)
+                xmax.text = str(int(xmax.text) + 448)
+
+        tree.write("annotation_padding\\"+fname[:-4]+'_pd'+'.xml')
+
+        #original = cv2.imread(fullpath, cv2.IMREAD_COLOR)
+        #print(fullpath)
+        #cv2.imshow('frame', original)
+        #original = cv2.cvtColor(original, cv2.COLOR_BGR2RGB)
+
+
+        #newpath = "padding_data\\"+ fname[:-4]+'_pd'+'.png'
+        #cv2.imwrite(newpath, constant)

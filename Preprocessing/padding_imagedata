@@ -1,0 +1,85 @@
+import os
+
+import numpy as np
+import random
+import cv2
+
+from PIL import Image
+#import matplotlib as plt
+
+from matplotlib import pyplot as plt
+
+
+if __name__ == '__main__':
+    """
+    for file_name in os.listdir("ubuntu_data1"):
+        if file_name.split(".")[-1].lower() in {"jpeg", "jpg", "png"}:
+            # print(file_name.split(".")[-1].lower())
+            temp = detector.generate("csimg\\" + file_name, False)
+            if np.all(np.array([0, 0, 0, 0]) == temp):
+                continue
+            else:
+                js_list = np.vstack([js_list, temp])
+    """
+    #filename = os.path.join('path', 'to', 'image', 'file')
+    #img = Image.open("C:\\Users\\USER\\Desktop\\졸업프로젝트\\yolo_test\\padding\\ubuntu_data1\\1imgAI9_t.png")
+    #print(img.size) #224x224 -> 672x672
+
+
+#    same = cv2.copyMakeBorder(original, 0, 0, 0, 0, cv2.BORDER_REPLICATE)
+#    replicate = cv2.copyMakeBorder(original, 150, 50, 50, 50, cv2.BORDER_REPLICATE)
+#    reflect = cv2.copyMakeBorder(original, 150, 50, 50, 50, cv2.BORDER_REFLECT)
+#    wrap = cv2.copyMakeBorder(original, 150, 50, 50, 50, cv2.BORDER_WRAP)
+
+    path = "ubuntu_data\\"
+
+    for i, fname in enumerate(os.listdir(path)):
+
+
+        fullpath = path + fname
+
+        original = cv2.imread(fullpath, cv2.IMREAD_COLOR)
+        print(fullpath)
+        cv2.imshow('frame', original)
+        #original = cv2.cvtColor(original, cv2.COLOR_BGR2RGB)
+
+        if fname[0]=="1":
+            # 1번째칸에 사진있다
+            constant = cv2.copyMakeBorder(original, 0, 448, 0, 448, cv2.BORDER_CONSTANT, value=[131, 123, 110])
+
+        elif fname[0]=="2":
+            # 1번째칸에 사진있다
+            constant = cv2.copyMakeBorder(original, 0, 448, 224, 224, cv2.BORDER_CONSTANT, value=[131, 123, 110])
+
+        elif fname[0]=="3":
+            # 1번째칸에 사진있다
+            constant = cv2.copyMakeBorder(original, 0, 448, 448, 0, cv2.BORDER_CONSTANT, value=[131, 123, 110])
+
+        elif fname[0]=="4":
+            # 1번째칸에 사진있다
+            constant = cv2.copyMakeBorder(original, 224, 224, 0, 448, cv2.BORDER_CONSTANT, value=[131, 123, 110])
+
+        elif fname[0]=="5":
+            # 1번째칸에 사진있다
+            constant = cv2.copyMakeBorder(original, 224, 224, 224, 224, cv2.BORDER_CONSTANT, value=[131, 123, 110])
+
+        elif fname[0]=="6":
+            # 1번째칸에 사진있다
+            constant = cv2.copyMakeBorder(original, 224, 224, 448, 0, cv2.BORDER_CONSTANT, value=[131, 123, 110])
+
+        elif fname[0]=="7":
+            # 1번째칸에 사진있다
+            constant = cv2.copyMakeBorder(original, 448, 0, 0, 448, cv2.BORDER_CONSTANT, value=[131, 123, 110])
+
+        elif fname[0]=="8":
+            # 1번째칸에 사진있다
+            constant = cv2.copyMakeBorder(original, 448, 0, 224, 224, cv2.BORDER_CONSTANT, value=[131, 123, 110])
+
+        elif fname[0]=="9":
+            # 1번째칸에 사진있다
+            constant = cv2.copyMakeBorder(original, 448, 0, 448, 0, cv2.BORDER_CONSTANT, value=[131, 123, 110])
+
+
+
+        newpath = "padding_data\\"+ fname[:-4]+'_pd'+'.png'
+        cv2.imwrite(newpath, constant)

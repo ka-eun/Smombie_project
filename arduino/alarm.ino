@@ -32,27 +32,3 @@ void loop() {
 
 
 }
-
-
-   
- /* 
-  while(Serial.available() > 0){
-    flag = Serial.read();
-    if(flag=='s'){
-      digitalWrite(13, HIGH);
-      delay(100000);
-      Serial.println("flag = 1");
-    }
-    else if (flag=='n'){
-      digitalWrite(13, LOW);
-      Serial.println("flag = 0");
-      
-    }
-  }
-  */
-
-
-void alarm(){
-  
-   
-}
